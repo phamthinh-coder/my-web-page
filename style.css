@@ -1,0 +1,181 @@
+h1 {
+    color: #1e6091;
+    border-bottom: 3px solid #1e6091;
+    padding-bottom: 8px;
+    text-align: center;
+}
+h2 {
+    color: #2a7f93;
+    margin-top: 32px;
+}
+
+ /*border-bottom: 3px solid #1e6091 là viền dưới: dày 3 pixel, nét liền, màu xanh.
+ margin là khoảng cách bên ngoài khối, đẩy các phần tử ra xa nhau.
+ Phân biệt với padding ở Bước 2: padding ở trong, margin ở ngoài.  */
+
+/* 1 CSS gồm 3 phần 
+selector {
+    thuộc tính: giá trị;
+}
+selector(bộ chọn): chọn phần tử cần trang trí, ở đây là h1. 
+thuộc tính: điều muốn thay đổi, ở đây là color (màu chữ). 
+giá-trị: thay đổi thành gì, ở đây là mã màu #1e6091.
+Mỗi dòng kết thúc bằng dấu chấm phẩy.  */
+
+body {
+    font-family: TimeNewRoman, serif;
+    background-color: #e4efe4;
+    color: #333333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+/* font-family: Font chữ. Liệt kê nhiều font phòng khi máy không có font đầu tiên.
+background-color: Màu nền. 
+color: màu chữ. 
+line-height: Độ cao dòng (1.6 nghĩa là 1,6 lần cỡ chữ), giúp chữ dễ đọc. 
+max-width: Căn khối ra giữa: trên/dưới 0, trái/phải tự động. 
+padding: Khoảng đệm bên trong khối, giữa nội dung và mép khối.  */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #9680da;
+
+}
+th, td {
+    border: 1px solid #eee7e7;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1e6091;
+    color: white;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #eef3f7;
+
+}
+tr:hover {
+    background-color: #dbe9f4;
+}
+
+/* border-collapse: collapse gộp các viền đôi thành 1 viền đơn cho gọn. 
+th, td là nhiều selector cùng 1 quy tắc, ngăn cách nhau bằng dấu phẩy. 
+tr:nth-child(even) chọn các hàng chẵn để tạo sọc xen kẽ giúp dễ đọc
+tr:hover áp dụng khi rê chuột lên hàng. 
+Đây là ví dụ của "trạng thái" (pseudo-class).
+Quy tắc nào viết sau thì được ưu tiên khi trùng thuộc tính. Vì vậy tr:hover được đặt sau tr:nth-child(even). */
+
+.dang-giao {
+    color: #d97706;
+    font-weight:bold;
+
+}
+.da-giao {
+    color: #15803d;
+    font-weight: bold;
+}
+.cho-giao {
+    color: #d3110d;
+}
+
+/* class- là nhãn tự đặt cho phần tử HTML. Trong CSS viết dấu + tên clas(.da-giao) để chọn đúng phần tử có nhãn đó. 
+Nhiều phần tử có thể dùng chung 1 class.
+Sau này thêm 100 đơn đã giao, chỉ cần gắn class ="da-giao" là có màu. 
+Đặt tên class bằng chữ thường không dấu, nối bằng gạch ngang.  */
+
+a {
+    color: #1e6091;
+    background-color: #f20606;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+a:hover {
+    color: #d97706;
+}
+
+.noi-dung {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.gioi-thieu {
+    display: flex;
+}
+
+.cot-trai {
+  flex: 1;
+}
+
+
+.cot-phai {
+  flex: 1;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 3px solid #1e6091;
+    margin-bottom: 24pxl;
+}
+
+footer {
+    text-align: center;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #ccd6dd;
+    color: #667;
+}
+
+.cot-trai, .cot-phai {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+    .noi-dung {
+        flex-direction: column;
+    }
+}
+
+.bo-loc button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: 1px solid #1e6091;
+    background-color: white;
+    color: #1e6091;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.bo-loc button hover {
+    background-color: #1e6091;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

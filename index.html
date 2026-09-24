@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Trang web đầu tiên của tôi </title>
+  <link rel="stylesheet" href="style.css" </head>
+  <title>Document</title>
+</head>
+<!-- Phần nằm trong Head là tiêu đề như tên miền  -->
+
+
+<body>
+
+  <header>
+    <div class="gioi-thieu">
+      <h1>Xin chào, tôi là sinh viên Logistics</h1>
+      <p>Đây là trang web đầu tiên tôi tạo bằng <strong>VS Code</strong>.</p>
+      <p>Tôi sẽ cố gắng học</p>
+    </div>
+  </header>
+
+  <div class="noi-dung">
+
+    <div class="cot-trai">
+      <h2>Điều tôi sẽ học</h2>
+      <ul>
+        <li>HTML: xây cấu trúc trang</li>
+        <li>CSS: làm đẹp giao diện</li>
+        <li>JavaScript: thêm tương tác</li>
+      </ul>
+    </div>
+
+    <div class="cot-phai">
+      <h2>Bảng theo dõi đơn hàng mẫu</h2>
+      <p id="dem-don">Đang tải số đơn...</p>
+      <div class="bo-loc">
+        <button id="btn-tat-ca">Tất cả</button>
+        <button id="btn-dang-giao">Đang giao</button>
+        <button id="btn-chua-giao">Chưa giao</button>
+      </div>
+      <table>
+        <tr>
+          <th>Mã đơn</th>
+          <th>Điểm đến</th>
+          <th>Trạng thái</th>
+        </tr>
+        <tr class="hang-don" data-trang-thai="dang-giao">
+          <td>DH001</td>
+          <td>Hà Nội</td>
+          <td class="dang-giao">Đang giao</td>
+        </tr>
+        <tr class="hang-don" data-trang-thai="da-giao">
+          <td>DH002</td>
+          <td>Đà Nẵng</td>
+          <td class="da-giao">Đã giao</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Tài liệu tham khảo: <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+
+
+<!-- Nội dung sẽ nằm ở phần body, trong body có h1-h6 là gồm các tiêu đề, thẻ <p> là nội dung, <strong> là in đậm,
+    <ol> là tạo danh sách số, <ul> là tạo danh sách dấu chấm,table là tạo bảng, border = "1" là viền tạm thời,
+        tr là 1 hàng, th là ô tiêu đề, td là nội dung bên trong đó,
+        a href ="" là tạo link liên kết,
+        a href ="" target ="_blank" là tạo liên kết với trang mới -->
+
+</html>
+
+<!-- <header> và <footer> là thẻ có sẵn ý nghĩa: đầu trang và chân trang. - 
+<div> là thẻ “khối chung chung”, dùng để gom nhóm các phần tử lại, không tự mang ý nghĩa gì. 
+Ở đây dùng để tạo cột trái và cột phải. - class="noi-dung", class="cot-trai", class="cot-phai" là các nhãn để CSS nhận diện và trang trí riêng từng khối. -->
